@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Recipe Ai</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>RecipeAi</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>en</string>
+		<string>zh_Hans</string>
+		<string>es</string>
+		<string>ar</string>
+		<string>hi</string>
+		<string>fr</string>
+		<string>pt</string>
+		<string>de</string>
+		<string>ru</string>
+		<string>bg</string>
+		<string>ca</string>
+		<string>cs</string>
+		<string>da</string>
+		<string>el</string>
+		<string>fi</string>
+		<string>tl</string>
+		<string>hr</string>
+		<string>hu</string>
+		<string>id</string>
+		<string>is</string>
+		<string>it</string>
+		<string>ja</string>
+		<string>ko</string>
+		<string>lv</string>
+		<string>ms</string>
+		<string>no</string>
+		<string>nl</string>
+		<string>pl</string>
+		<string>ro</string>
+		<string>sk</string>
+		<string>sr</string>
+		<string>sv</string>
+		<string>ta</string>
+		<string>te</string>
+		<string>th</string>
+		<string>tr</string>
+		<string>uk</string>
+		<string>vi</string>
+	</array>
+
+	<key>CFBundleShortVersionString</key>
+	<string>$(FLUTTER_BUILD_NAME)</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>        <dict>
+        <key>CFBundleTypeRole</key>
+        <string>Editor</string>
+        <key>CFBundleURLName</key>
+        <string>recipeai.com</string>
+        <key>CFBundleURLSchemes</key>
+        <array>
+        <string>recipeai</string>
+        </array>
+        </dict>
+    </array>
+    <key>FlutterDeepLinkingEnabled</key>
+    <true/>
+
+
+	<key>CFBundleVersion</key>
+	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+
+
+
+
+
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+  <key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-1761855375816044~7201644387</string>
+	<key>SKAdNetworkItems</key>
+		<array>
+			<dict>
+				<key>SKAdNetworkIdentifier</key>
+				<string>cstr6suwn9.skadnetwork</string>
+			</dict>
+		</array>
+	<key>io.flutter.embedded_views_preview</key>
+	<true/>
+</dict>
+</plist>
