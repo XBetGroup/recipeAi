@@ -63,7 +63,7 @@ class _RecipeWidgetState extends State<RecipeWidget> {
       admob.loadInterstitialAd(
         "ca-app-pub-1761855375816044/4594368746",
         "ca-app-pub-1761855375816044/5492780770",
-        true,
+        false,
       );
 
       setState(() {
@@ -1816,9 +1816,44 @@ class _RecipeWidgetState extends State<RecipeWidget> {
                                                     FFAppState().animFlag =
                                                         true;
                                                   });
+
+                                                  _model.interstitialAdSuccess2 =
+                                                      await admob
+                                                          .showInterstitialAd();
+
+                                                  if (_model
+                                                      .interstitialAdSuccess2!) {
+                                                    admob.loadInterstitialAd(
+                                                      "ca-app-pub-1761855375816044/4594368746",
+                                                      "ca-app-pub-1761855375816044/5492780770",
+                                                      true,
+                                                    );
+                                                  } else {
+                                                    ScaffoldMessenger.of(
+                                                            context)
+                                                        .showSnackBar(
+                                                      SnackBar(
+                                                        content: Text(
+                                                          'Fail to load ads',
+                                                          style: TextStyle(
+                                                            color: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .primaryText,
+                                                          ),
+                                                        ),
+                                                        duration: Duration(
+                                                            milliseconds: 4000),
+                                                        backgroundColor:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .secondary,
+                                                      ),
+                                                    );
+                                                  }
+
                                                   _model.apiResult =
                                                       await actions.chatGPT(
-                                                    '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',
+                                                    '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',
                                                     _model.userInput!
                                                         .toString(),
                                                     FFLocalizations.of(context)
@@ -1838,41 +1873,6 @@ class _RecipeWidgetState extends State<RecipeWidget> {
                                                   );
                                                   if ((_model.url1?.succeeded ??
                                                       true)) {
-                                                    _model.interstitialAdSuccess2 =
-                                                        await admob
-                                                            .showInterstitialAd();
-
-                                                    if (_model
-                                                        .interstitialAdSuccess222!) {
-                                                      admob.loadInterstitialAd(
-                                                        "ca-app-pub-1761855375816044/4594368746",
-                                                        "ca-app-pub-1761855375816044/5492780770",
-                                                        true,
-                                                      );
-                                                    } else {
-                                                      ScaffoldMessenger.of(
-                                                              context)
-                                                          .showSnackBar(
-                                                        SnackBar(
-                                                          content: Text(
-                                                            'Fail to load ads',
-                                                            style: TextStyle(
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .primaryText,
-                                                            ),
-                                                          ),
-                                                          duration: Duration(
-                                                              milliseconds:
-                                                                  4000),
-                                                          backgroundColor:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .secondary,
-                                                        ),
-                                                      );
-                                                    }
-
                                                     setState(() {
                                                       FFAppState().toggle =
                                                           false;
@@ -2042,9 +2042,22 @@ class _RecipeWidgetState extends State<RecipeWidget> {
                                                       FFAppState().animFlag =
                                                           true;
                                                     });
+
+                                                    _model.interstitialAdSuccess2342 =
+                                                        await admob
+                                                            .showInterstitialAd();
+
+                                                    if (_model
+                                                        .interstitialAdSuccess2342!) {
+                                                      admob.loadInterstitialAd(
+                                                        "ca-app-pub-1761855375816044/4594368746",
+                                                        "ca-app-pub-1761855375816044/5492780770",
+                                                        true,
+                                                      );
+                                                    }
                                                     _model.apiResult0 =
                                                         await actions.chatGPT(
-                                                      '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',
+                                                      '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',
                                                       _model.userInput!
                                                           .toString(),
                                                       FFLocalizations.of(
@@ -2070,20 +2083,6 @@ class _RecipeWidgetState extends State<RecipeWidget> {
                                                         FFAppState().toggle =
                                                             false;
                                                       });
-
-                                                      _model.interstitialAdSuccess2342 =
-                                                          await admob
-                                                              .showInterstitialAd();
-
-                                                      if (_model
-                                                          .interstitialAdSuccess2342!) {
-                                                        admob
-                                                            .loadInterstitialAd(
-                                                          "ca-app-pub-1761855375816044/4594368746",
-                                                          "ca-app-pub-1761855375816044/5492780770",
-                                                          true,
-                                                        );
-                                                      }
                                                       setState(() {
                                                         FFAppState().animFlag =
                                                             false;

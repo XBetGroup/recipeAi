@@ -44,20 +44,20 @@ class RecipeModel extends FlutterFlowModel {
   // State field(s) for LevelChoice widget.
   String? levelChoiceValue;
   FormFieldController<List<String>>? levelChoiceValueController;
+  // Stores action output result for [AdMob - Show Interstitial Ad] action in Container widget.
+  bool? interstitialAdSuccess2;
   // Stores action output result for [Custom Action - chatGPT] action in Container widget.
   dynamic? apiResult;
   // Stores action output result for [Backend Call - API (DeepAIImage)] action in Container widget.
   ApiCallResponse? url1;
   // Stores action output result for [AdMob - Show Interstitial Ad] action in Container widget.
-  bool? interstitialAdSuccess2;
-  // Stores action output result for [AdMob - Show Interstitial Ad] action in Container widget.
   bool? interstitialAdSuccess222;
+  // Stores action output result for [AdMob - Show Interstitial Ad] action in Container widget.
+  bool? interstitialAdSuccess2342;
   // Stores action output result for [Custom Action - chatGPT] action in Container widget.
   dynamic? apiResult0;
   // Stores action output result for [Backend Call - API (DeepAIImage)] action in Container widget.
   ApiCallResponse? url0;
-  // Stores action output result for [AdMob - Show Interstitial Ad] action in Container widget.
-  bool? interstitialAdSuccess2342;
 
   /// Initialization and disposal methods.
 
