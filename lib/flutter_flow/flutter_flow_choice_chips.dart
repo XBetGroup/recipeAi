@@ -77,7 +77,7 @@ class _FlutterFlowChoiceChipsState extends State<FlutterFlowChoiceChips> {
   @override
   void initState() {
     super.initState();
-    choiceChipValues = List.from(widget.controller.initialValue ?? []);
+    choiceChipValues = selectedValues;
     if (!widget.initialized && choiceChipValues.isNotEmpty) {
       SchedulerBinding.instance.addPostFrameCallback(
         (_) {
@@ -88,9 +88,6 @@ class _FlutterFlowChoiceChipsState extends State<FlutterFlowChoiceChips> {
       );
     }
     changeSelectedValues.addListener(() {
-      if (!listEquals(choiceChipValues, selectedValues)) {
-        setState(() => choiceChipValues = List.from(selectedValues));
-      }
       if (widget.onChanged != null) {
         widget.onChanged!(selectedValues);
       }

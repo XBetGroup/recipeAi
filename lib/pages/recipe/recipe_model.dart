@@ -10,6 +10,7 @@ import '/custom_code/actions/index.dart' as actions;
 import '/flutter_flow/admob_util.dart' as admob;
 import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:badges/badges.dart' as badges;
+import 'recipe_widget.dart' show RecipeWidget;
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
@@ -19,7 +20,7 @@ import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
 
-class RecipeModel extends FlutterFlowModel {
+class RecipeModel extends FlutterFlowModel<RecipeWidget> {
   ///  Local state fields for this page.
 
   dynamic userInput;

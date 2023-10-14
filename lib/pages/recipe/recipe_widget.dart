@@ -87,7 +87,9 @@ class _RecipeWidgetState extends State<RecipeWidget> {
     context.watch<FFAppState>();
 
     return GestureDetector(
-      onTap: () => FocusScope.of(context).requestFocus(_model.unfocusNode),
+      onTap: () => _model.unfocusNode.canRequestFocus
+          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
+          : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
@@ -1853,7 +1855,7 @@ class _RecipeWidgetState extends State<RecipeWidget> {
 
                                                   _model.apiResult =
                                                       await actions.chatGPT(
-                                                    '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',
+                                                    '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',
                                                     _model.userInput!
                                                         .toString(),
                                                     FFLocalizations.of(context)
@@ -2057,7 +2059,7 @@ class _RecipeWidgetState extends State<RecipeWidget> {
                                                     }
                                                     _model.apiResult0 =
                                                         await actions.chatGPT(
-                                                      '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',
+                                                      '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',
                                                       _model.userInput!
                                                           .toString(),
                                                       FFLocalizations.of(

@@ -69,7 +69,9 @@ class _OutputWidgetState extends State<OutputWidget> {
     context.watch<FFAppState>();
 
     return GestureDetector(
-      onTap: () => FocusScope.of(context).requestFocus(_model.unfocusNode),
+      onTap: () => _model.unfocusNode.canRequestFocus
+          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
+          : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
@@ -521,6 +523,7 @@ class _OutputWidgetState extends State<OutputWidget> {
                                                             (getJsonField(
                                               widget.contents,
                                               r'''$.ingredients''',
+                                              true,
                                             ) as List)
                                                                 .map<String>((s) =>
                                                                     s.toString())
@@ -531,6 +534,7 @@ class _OutputWidgetState extends State<OutputWidget> {
                                                 (getJsonField(
                                               widget.contents,
                                               r'''$.ingredients''',
+                                              true,
                                             ) as List)
                                                     .map<String>(
                                                         (s) => s.toString())
@@ -634,6 +638,7 @@ class _OutputWidgetState extends State<OutputWidget> {
                                                             (getJsonField(
                                               widget.contents,
                                               r'''$.instructions''',
+                                              true,
                                             ) as List)
                                                                 .map<String>((s) =>
                                                                     s.toString())
@@ -644,6 +649,7 @@ class _OutputWidgetState extends State<OutputWidget> {
                                                 (getJsonField(
                                               widget.contents,
                                               r'''$.instructions''',
+                                              true,
                                             ) as List)
                                                     .map<String>(
                                                         (s) => s.toString())

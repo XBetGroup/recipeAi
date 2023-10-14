@@ -3,11 +3,12 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/revenue_cat_util.dart' as revenue_cat;
+import 'premium_membership_widget.dart' show PremiumMembershipWidget;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
-class PremiumMembershipModel extends FlutterFlowModel {
+class PremiumMembershipModel extends FlutterFlowModel<PremiumMembershipWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
